@@ -1,0 +1,74 @@
+<p>Le code de <code>pseudo-classes.html</code> </p>
+
+<pre class="prettyprint linenums">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+ &lt;meta charset="utf-8"&gt;
+ &lt;title&gt;Pseudo Elements&lt;/title&gt;
+ &lt;link rel="stylesheet" href="stylebase.css"&gt;
+ &lt;style type="text/css"&gt;
+ .survol:hover{
+ text-transform: uppercase;
+ background-color: red;
+ color: white;
+ }
+ .selection:focus{
+ text-transform: uppercase;
+ border: 5px solid green;
+ }
+ .activation:active{
+ font-weight: 900;
+ color: green;
+ }
+ p:first-child{
+ color: red;
+ }
+ &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+ &lt;div class="card survol"&gt;
+ &lt;h1&gt; :hover &lt;/h1&gt;
+ &lt;p&gt;
+ Le CSS s'active au survol
+ &lt;/p&gt;
+ &lt;/div&gt;
+ &lt;div class="card"&gt; 
+ &lt;h1&gt; :focus &lt;/h1&gt;
+ &lt;p&gt;
+ &lt;a class="selection" href="http://google.com"&gt;S'active quand on le séléctionne ou qu'on y passe avec la touche tab. Comme un input par exemple ou un lien&lt;/a&gt; 
+ &lt;br/&gt;
+ &lt;input class="selection" type="text"/&gt;
+ &lt;/p&gt;
+ &lt;/div&gt;
+ &lt;div class="card"&gt; 
+ &lt;h1&gt; :active &lt;/h1&gt;
+ &lt;p&gt;
+ &lt;a class="activation" href="#"&gt;S'active quand on clic dessus. Pour un lien ou un bouton &lt;/a&gt; 
+ &lt;button class="activation"&gt;Valider&lt;/button&gt;
+ &lt;/p&gt;
+ &lt;/div&gt;
+ &lt;div class="card"&gt;
+ &lt;h1&gt;:first-child&lt;/h1&gt;
+ &lt;!-- c'est le premier P mais pas le premier fils -&gt; h1 --&gt;
+ &lt;p&gt;
+ Permet de séléction le premier fils
+ &lt;/p&gt;
+ &lt;h3&gt;Exemple&lt;/h3&gt;
+ &lt;section&gt;
+ &lt;p&gt; premier paragraphe...&lt;/p&gt;
+ &lt;p&gt;Lorem ipsum...&lt;/p&gt;
+ &lt;/section&gt;
+ &lt;section&gt;
+ &lt;h2&gt;test&lt;/h2&gt;
+ &lt;p&gt; premier paragraphe...&lt;/p&gt;
+ &lt;p&gt;Lorem ipsum...&lt;/p&gt;
+ &lt;/section&gt;
+ &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+
+
+
+
+<p><br></p>
